@@ -24,5 +24,6 @@ echo $APPLICATION_ID
 echo $API_KEY
 echo $GITHUB_WORKSPACE
 echo $FILE
+# docker run -it --env-file=.env -e "CONFIG=$(cat config.example | jq -r tostring)" algolia/docsearch-scraper
 # run algolia docsearch
-# exec python docsearch run $GITHUB_WORKSPACE/$FILE
+exec python docsearch run $GITHUB_WORKSPACE/$FILE
