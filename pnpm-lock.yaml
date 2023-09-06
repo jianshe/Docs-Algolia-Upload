@@ -1,0 +1,151 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  algoliasearch:
+    specifier: ^4.9.3
+    version: registry.npmmirror.com/algoliasearch@4.9.3
+
+packages:
+
+  registry.npmmirror.com/@algolia/cache-browser-local-storage@4.9.3:
+    resolution: {integrity: sha512-t9yKMfPNxxEUk/PPbZtXj0GCttDk1pk0wV2eA5udIOgf+Wqb/77yH75zz1u8EmCBGPe+FWXjSVT/wS1tlQz7SA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/cache-browser-local-storage/-/cache-browser-local-storage-4.9.3.tgz}
+    name: '@algolia/cache-browser-local-storage'
+    version: 4.9.3
+    dependencies:
+      '@algolia/cache-common': registry.npmmirror.com/@algolia/cache-common@4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/cache-common@4.9.3:
+    resolution: {integrity: sha512-4dvzz28ESs7lRHmpBIjlmRloD9oGeD90E2C0QWNQYuAYosSdXGwW7vw4vdGRdPoL32t6u6S+47Bk6Dhcbw2ftA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/cache-common/-/cache-common-4.9.3.tgz}
+    name: '@algolia/cache-common'
+    version: 4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/cache-in-memory@4.9.3:
+    resolution: {integrity: sha512-e1eRpP/Ht9qmLw5Sp674N6Y0c59K0L2LBI71EBOlq1j+kVc+JxVO03he5g+nQ7JOwLijyJPrkbm3RvXb5CX0sA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/cache-in-memory/-/cache-in-memory-4.9.3.tgz}
+    name: '@algolia/cache-in-memory'
+    version: 4.9.3
+    dependencies:
+      '@algolia/cache-common': registry.npmmirror.com/@algolia/cache-common@4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/client-account@4.9.3:
+    resolution: {integrity: sha512-mSF0jiAo/tWKf/Z7mqhz6ETltrl+L+Zt2xuM3W5y1UOZvj47fn2ZcMRce8MQ+dd54t9iA8qIa+0XGlCSQf9lxA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-account/-/client-account-4.9.3.tgz}
+    name: '@algolia/client-account'
+    version: 4.9.3
+    dependencies:
+      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common@4.9.3
+      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search@4.9.3
+      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter@4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/client-analytics@4.9.3:
+    resolution: {integrity: sha512-Z3EjegxsdTMRmOLoDBnCZJjdL3ZM4J/G7TMe2PIArdCJFWM4iDnO7/MvYasqpK0PPOCHRh0wS4yKG9rZOz6Vsw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-analytics/-/client-analytics-4.9.3.tgz}
+    name: '@algolia/client-analytics'
+    version: 4.9.3
+    dependencies:
+      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common@4.9.3
+      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search@4.9.3
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common@4.9.3
+      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter@4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/client-common@4.9.3:
+    resolution: {integrity: sha512-6GAfuNqMrBN3094H0DzvQyxJoKUkyQpEr5OiFhH8I3lihI1rTtjEUrNDTsVp6e9VsR2OCRpnL9EEDv2HcGe8cw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-common/-/client-common-4.9.3.tgz}
+    name: '@algolia/client-common'
+    version: 4.9.3
+    dependencies:
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common@4.9.3
+      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter@4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/client-recommendation@4.9.3:
+    resolution: {integrity: sha512-r+MNluwnUTr1tgHWQ5BPRw0A0YJZp9sXjSVxPCY3a+N6BgLaX4E02+FA8VrqVs8uR7mMQSLaJHoeCKnmNPrk9w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-recommendation/-/client-recommendation-4.9.3.tgz}
+    name: '@algolia/client-recommendation'
+    version: 4.9.3
+    dependencies:
+      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common@4.9.3
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common@4.9.3
+      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter@4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/client-search@4.9.3:
+    resolution: {integrity: sha512-8C6woYf6bY4Fh9H9nKY5IDDeBPwQ3nZn9QMQdgUj9ffDU8UzPqSivtLER1A+I81p1j9h+aBADRifwzIYtSXOkA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-search/-/client-search-4.9.3.tgz}
+    name: '@algolia/client-search'
+    version: 4.9.3
+    dependencies:
+      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common@4.9.3
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common@4.9.3
+      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter@4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/logger-common@4.9.3:
+    resolution: {integrity: sha512-8hGQ5HQvjx2kr7GWOmpON1tcRX2+VHqVg4p+qJqCBsPFlXbAshUyRJkxuen20eem2EAA5Cmmo1fPy/jlqdMMHA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/logger-common/-/logger-common-4.9.3.tgz}
+    name: '@algolia/logger-common'
+    version: 4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/logger-console@4.9.3:
+    resolution: {integrity: sha512-7FGulrAjS/oCVRShKJw5qFuyHOZk/44jolEtNtXvO/tZRR8hPPiow16Vrd3ByRSIhghkC5zj6at4nQhoPK+KqA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/logger-console/-/logger-console-4.9.3.tgz}
+    name: '@algolia/logger-console'
+    version: 4.9.3
+    dependencies:
+      '@algolia/logger-common': registry.npmmirror.com/@algolia/logger-common@4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/requester-browser-xhr@4.9.3:
+    resolution: {integrity: sha512-hP4YgxcY1kol0d+joXpO4BJuXjgF+vy3eBPk8WCXvZucv8hl5Vqb4BLccDMck+sTqP4Tqglwh/KwVTQrpmi/wA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/requester-browser-xhr/-/requester-browser-xhr-4.9.3.tgz}
+    name: '@algolia/requester-browser-xhr'
+    version: 4.9.3
+    dependencies:
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common@4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/requester-common@4.9.3:
+    resolution: {integrity: sha512-AgUw1iA/JkanZC+dhkSLyeiVgBhaaM3bI20f3cokuuDdz4X6F+hzi0vEpUZrEuNfnMLbUg8gxq3Vcg1/L9+9MA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/requester-common/-/requester-common-4.9.3.tgz}
+    name: '@algolia/requester-common'
+    version: 4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/requester-node-http@4.9.3:
+    resolution: {integrity: sha512-+nz7rRnI9qNcdZjHpyAyvcDLAO9mGobqsAi0aicxMka/szU1HVUX6+pvSOiiOsD8ST3R13rJuufgHfWdDUysQg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/requester-node-http/-/requester-node-http-4.9.3.tgz}
+    name: '@algolia/requester-node-http'
+    version: 4.9.3
+    dependencies:
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common@4.9.3
+    dev: false
+
+  registry.npmmirror.com/@algolia/transporter@4.9.3:
+    resolution: {integrity: sha512-oJ68VSSpmUyB9EByqoyx25wgcrO9fgXtjH+pOtKoKmCW+RfxHW5agltJoQ808N8uq/AvP5ugMkRLGL3xf4WdzQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/transporter/-/transporter-4.9.3.tgz}
+    name: '@algolia/transporter'
+    version: 4.9.3
+    dependencies:
+      '@algolia/cache-common': registry.npmmirror.com/@algolia/cache-common@4.9.3
+      '@algolia/logger-common': registry.npmmirror.com/@algolia/logger-common@4.9.3
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common@4.9.3
+    dev: false
+
+  registry.npmmirror.com/algoliasearch@4.9.3:
+    resolution: {integrity: sha512-VLl9pYXhVB397xTW369sy13qw3m1hHzCfj9zSdeDDYVwTxHiiok/QvhPKAMIzjqyUoY07O8j+941UxYZjugsMQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/algoliasearch/-/algoliasearch-4.9.3.tgz}
+    name: algoliasearch
+    version: 4.9.3
+    dependencies:
+      '@algolia/cache-browser-local-storage': registry.npmmirror.com/@algolia/cache-browser-local-storage@4.9.3
+      '@algolia/cache-common': registry.npmmirror.com/@algolia/cache-common@4.9.3
+      '@algolia/cache-in-memory': registry.npmmirror.com/@algolia/cache-in-memory@4.9.3
+      '@algolia/client-account': registry.npmmirror.com/@algolia/client-account@4.9.3
+      '@algolia/client-analytics': registry.npmmirror.com/@algolia/client-analytics@4.9.3
+      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common@4.9.3
+      '@algolia/client-recommendation': registry.npmmirror.com/@algolia/client-recommendation@4.9.3
+      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search@4.9.3
+      '@algolia/logger-common': registry.npmmirror.com/@algolia/logger-common@4.9.3
+      '@algolia/logger-console': registry.npmmirror.com/@algolia/logger-console@4.9.3
+      '@algolia/requester-browser-xhr': registry.npmmirror.com/@algolia/requester-browser-xhr@4.9.3
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common@4.9.3
+      '@algolia/requester-node-http': registry.npmmirror.com/@algolia/requester-node-http@4.9.3
+      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter@4.9.3
+    dev: false
