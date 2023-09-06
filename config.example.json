@@ -13,17 +13,8 @@
     "lvl5": ".doc-content h6",
     "text": ".doc-content p, .doc-content li"
   },
-  "selectors_exclude": [
-    "aside",
-    ".page-footer",
-    ".next-and-prev-link",
-    ".table-of-contents"
+  "conversation_id": [
+    "1313246279"
   ],
-  "custom_settings": {
-    "attributesForFaceting": [
-      "lang",
-      "tags"
-    ]
-  },
-  "js_render": true
+  "nb_hits": 98
 }
