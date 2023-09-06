@@ -1,5 +1,5 @@
 {
-  "index_name": "albert",
+  "index_name": "albert_query_suggestions",
   "start_urls": [
     "https://aquaimpact.github.io/CovidSusTrackerDocs"
   ],
