@@ -20,6 +20,7 @@ pipenv install --system --deploy --ignore-pipfile
 echo "APPLICATION_ID=${APPLICATION_ID}
 API_KEY=${API_KEY}
 " > .env
-
+echo $APPLICATION_ID
+echo $API_KEY
 # run algolia docsearch
 # exec python docsearch run $GITHUB_WORKSPACE/$FILE
