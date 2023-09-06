@@ -22,5 +22,7 @@ API_KEY=${API_KEY}
 " > .env
 echo $APPLICATION_ID
 echo $API_KEY
+echo $GITHUB_WORKSPACE
+echo $FILE
 # run algolia docsearch
 # exec python docsearch run $GITHUB_WORKSPACE/$FILE
