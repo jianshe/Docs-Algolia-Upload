@@ -1,7 +1,7 @@
 {
-  "index_name": "dev_skillBrau",
+  "index_name": "dev_own",
   "start_urls": [
-    "https://aquaimpact.github.io/CovidSusTrackerDocs"
+    "https://chodocs.cn/"
   ],
   "stop_urls": [],
   "selectors": {
@@ -14,7 +14,7 @@
     "text": ".doc-content p, .doc-content li"
   },
   "conversation_id": [
-    "1313246279"
+    "18c872bdcdecdea8557c40f99e20e32c"
   ],
   "nb_hits": 98
 }
