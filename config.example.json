@@ -1,5 +1,5 @@
 {
-  "index_name": "dev_japanese",
+  "index_name": "dev_japanese_query_suggestions",
   "start_urls": [
     "http://jianshe.life"
   ],
