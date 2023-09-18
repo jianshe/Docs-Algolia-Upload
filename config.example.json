@@ -81,7 +81,7 @@
         "minWordSizefor2Typos": 7,
         "allowTyposOnNumericTokens": false,
         "minProximity": 1,
-        "indexLanguages": "zh-CN",
+        "indexLanguages": ["zh-CN"],
         "ignorePlurals": true,
         "advancedSyntax": true,
         "attributeCriteriaComputedByMinProximity": true,
