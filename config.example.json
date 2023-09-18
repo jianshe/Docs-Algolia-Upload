@@ -9,13 +9,13 @@
       "global": true,
       "default_value": "Documentation"
     },
-    "lvl1": "header h1, article h1",
-    "lvl2": "article h2",
-    "lvl3": "article h3",
-    "lvl4": "article h4",
-    "lvl5": "article h5, article td:first-child",
-    "lvl6": "article h6",
-    "text": "article p, article li, article td:last-child"
+    "lvl1": "div h1, div h1",
+    "lvl2": "div h2",
+    "lvl3": "div h3",
+    "lvl4": "div h4",
+    "lvl5": "div h5, article td:first-child",
+    "lvl6": "div h6",
+    "text": "div p, article li, article td:last-child"
   },
   "custom_settings": {
     "attributesForFaceting": [
@@ -31,7 +31,8 @@
       "anchor",
       "url",
       "url_without_anchor",
-      "type"
+      "type",
+      "lang"
     ],
     "attributesToHighlight": ["hierarchy", "content"],
     "attributesToSnippet": ["content:10"],
