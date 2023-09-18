@@ -2,6 +2,7 @@
   "index_name": "dev_japanese",
   "start_urls": ["http://jianshe.life/"],
   "stop_urls": ["/search"],
+  "language": {
   "selectors": {
     "lvl0": {
       "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
@@ -17,8 +18,6 @@
     "lvl6": "div h6",
     "text": "div p, div li, div td:last-child"
   },
-  "language": {
-    selectors: ".does-not-exists",
     defaultValue: ["zh-CN"]
   },
   "custom_settings": {
