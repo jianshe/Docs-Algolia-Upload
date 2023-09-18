@@ -1,4 +1,5 @@
 {
+  "lang": "zh-CN",
   "index_name": "dev_japanese",
   "start_urls": ["http://jianshe.life/"],
   "stop_urls": ["/search"],
@@ -13,9 +14,9 @@
     "lvl2": "div h2",
     "lvl3": "div h3",
     "lvl4": "div h4",
-    "lvl5": "div h5, article td:first-child",
+    "lvl5": "div h5, div td:first-child",
     "lvl6": "div h6",
-    "text": "div p, article li, article td:last-child"
+    "text": "div p, div li, div td:last-child"
   },
   "custom_settings": {
     "attributesForFaceting": [
