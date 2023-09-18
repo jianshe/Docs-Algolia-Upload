@@ -1,7 +1,7 @@
 {
-  "index_name": "dev_own",
+  "index_name": "dev_japanese",
   "start_urls": [
-    "http://jianshe.life/japanese/"
+    "http://jianshe.life"
   ],
   "sitemap_alternate_links": true,
   "stop_urls": [
