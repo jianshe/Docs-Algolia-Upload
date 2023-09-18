@@ -1,12 +1,10 @@
 {
+	// 修改部分
   "index_name": "dev_japanese_query_suggestions",
-  "start_urls": [
-    "http://jianshe.life"
-  ],
-  "sitemap_alternate_links": true,
-  "stop_urls": [
-    "/tests"
-  ],
+  "start_urls": ["http://jianshe.life/"], // 自己的域名网站地址
+	// 更换自己的域名地址，Docusaurus 官方会有配置生成 sitemap.xml 的方式
+	// end
+  "stop_urls": ["/search"], // 排除不需要爬取页面的路由地址
   "selectors": {
     "lvl0": {
       "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
@@ -14,21 +12,20 @@
       "global": true,
       "default_value": "Documentation"
     },
-    "lvl1": "div h1",
-    "lvl2": "div h2",
-    "lvl3": "div h3",
-    "lvl4": "div h4",
-    "lvl5": "div h5, div td:first-child",
-    "lvl6": "div h6",
-    "text": "div p, div li, div td:last-child"
+    "lvl1": "header h1, article h1",
+    "lvl2": "article h2",
+    "lvl3": "article h3",
+    "lvl4": "article h4",
+    "lvl5": "article h5, article td:first-child",
+    "lvl6": "article h6",
+    "text": "article p, article li, article td:last-child"
   },
-  "strip_chars": " .,;:#",
   "custom_settings": {
-    "separatorsToIndex": "_",
     "attributesForFaceting": [
+      "type",
+      "lang",
       "language",
       "version",
-      "type",
       "docusaurus_tag"
     ],
     "attributesToRetrieve": [
@@ -38,10 +35,50 @@
       "url",
       "url_without_anchor",
       "type"
+    ],
+    "attributesToHighlight": ["hierarchy", "content"],
+    "attributesToSnippet": ["content:10"],
+    "camelCaseAttributes": ["hierarchy", "content"],
+    "searchableAttributes": [
+      "unordered(hierarchy.lvl0)",
+      "unordered(hierarchy.lvl1)",
+      "unordered(hierarchy.lvl2)",
+      "unordered(hierarchy.lvl3)",
+      "unordered(hierarchy.lvl4)",
+      "unordered(hierarchy.lvl5)",
+      "unordered(hierarchy.lvl6)",
+      "content"
+    ],
+    "distinct": true,
+    "attributeForDistinct": "url",
+    "customRanking": [
+      "desc(weight.pageRank)",
+      "desc(weight.level)",
+      "asc(weight.position)"
+    ],
+    "ranking": [
+      "words",
+      "filters",
+      "typo",
+      "attribute",
+      "proximity",
+      "exact",
+      "custom"
+    ],
+    "highlightPreTag": "<span class='algolia-docsearch-suggestion--highlight'>",
+    "highlightPostTag": "</span>",
+    "minWordSizefor1Typo": 3,
+    "minWordSizefor2Typos": 7,
+    "allowTyposOnNumericTokens": false,
+    "minProximity": 1,
+    "ignorePlurals": true,
+    "advancedSyntax": true,
+    "attributeCriteriaComputedByMinProximity": true,
+    "removeWordsIfNoResults": "allOptional",
+    "separatorsToIndex": "_",
+    "synonyms": [
+      ["js", "javascript"],
+      ["ts", "typescript"]
     ]
-  },
-  "conversation_id": [
-    "833762294"
-  ],
-  "nb_hits": 46250
+  }
 }
