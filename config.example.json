@@ -86,7 +86,7 @@
         "attributeCriteriaComputedByMinProximity": true,
         "removeWordsIfNoResults": "allOptional",
         "separatorsToIndex": "_",
-        "language ": {
+        "lang": {
             "defaultValue": [
                 "zh-CN"
             ]
