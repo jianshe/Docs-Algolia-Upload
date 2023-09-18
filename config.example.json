@@ -16,7 +16,11 @@
     "lvl4": "div h4",
     "lvl5": "div h5, div td:first-child",
     "lvl6": "div h6",
-    "text": "div p, div li, div td:last-child"
+    "text": "div p, div li, div td:last-child",
+    "language": {
+        selectors: ".does-not-exists",
+        defaultValue: ["zh-CN"]
+      }
   },
   "custom_settings": {
     "attributesForFaceting": [
