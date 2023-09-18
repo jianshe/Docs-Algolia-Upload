@@ -83,6 +83,7 @@
         "minProximity": 1,
         "ignorePlurals": true,
         "advancedSyntax": true,
+        "indexLanguages": ["ja"],
         "attributeCriteriaComputedByMinProximity": true,
         "removeWordsIfNoResults": "allOptional",
         "separatorsToIndex": "_",
