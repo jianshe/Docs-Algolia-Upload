@@ -1,85 +1,105 @@
 {
-  "index_name": "dev_japanese",
-  "start_urls": ["http://jianshe.life/"],
-  "stop_urls": ["/search"],
-  "language": {
-  "selectors": {
-    "lvl0": {
-      "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
-      "type": "xpath",
-      "global": true,
-      "default_value": "Documentation"
+    "index_name": "dev_japanese",
+    "start_urls": [
+        "http://jianshe.life/"
+    ],
+    "stop_urls": [
+        "/search"
+    ],
+    "selectors": {
+        "lvl0": {
+            "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
+            "type": "xpath",
+            "global": true,
+            "default_value": "Documentation"
+        },
+        "lvl1": "div h1, div h1",
+        "lvl2": "div h2",
+        "lvl3": "div h3",
+        "lvl4": "div h4",
+        "lvl5": "div h5, div td:first-child",
+        "lvl6": "div h6",
+        "text": "div p, div li, div td:last-child"
     },
-    "lvl1": "div h1, div h1",
-    "lvl2": "div h2",
-    "lvl3": "div h3",
-    "lvl4": "div h4",
-    "lvl5": "div h5, div td:first-child",
-    "lvl6": "div h6",
-    "text": "div p, div li, div td:last-child"
-  },
-    defaultValue: ["zh-CN"]
-  },
-  "custom_settings": {
-    "attributesForFaceting": [
-      "type",
-      "lang",
-      "language",
-      "version",
-      "docusaurus_tag"
-    ],
-    "attributesToRetrieve": [
-      "hierarchy",
-      "content",
-      "anchor",
-      "url",
-      "url_without_anchor",
-      "type",
-      "lang"
-    ],
-    "attributesToHighlight": ["hierarchy", "content"],
-    "attributesToSnippet": ["content:10"],
-    "camelCaseAttributes": ["hierarchy", "content"],
-    "searchableAttributes": [
-      "unordered(hierarchy.lvl0)",
-      "unordered(hierarchy.lvl1)",
-      "unordered(hierarchy.lvl2)",
-      "unordered(hierarchy.lvl3)",
-      "unordered(hierarchy.lvl4)",
-      "unordered(hierarchy.lvl5)",
-      "unordered(hierarchy.lvl6)",
-      "content"
-    ],
-    "distinct": true,
-    "attributeForDistinct": "url",
-    "customRanking": [
-      "desc(weight.pageRank)",
-      "desc(weight.level)",
-      "asc(weight.position)"
-    ],
-    "ranking": [
-      "words",
-      "filters",
-      "typo",
-      "attribute",
-      "proximity",
-      "exact",
-      "custom"
-    ],
-    "highlightPreTag": "<span class='algolia-docsearch-suggestion--highlight'>",
-    "highlightPostTag": "</span>",
-    "minWordSizefor1Typo": 3,
-    "minWordSizefor2Typos": 7,
-    "allowTyposOnNumericTokens": false,
-    "minProximity": 1,
-    "ignorePlurals": true,
-    "advancedSyntax": true,
-    "attributeCriteriaComputedByMinProximity": true,
-    "removeWordsIfNoResults": "allOptional",
-    "separatorsToIndex": "_",
-    "synonyms": [
-      ["js", "javascript"],
-      ["ts", "typescript"]
-    ]
-  }
+    "custom_settings": {
+        "attributesForFaceting": [
+            "type",
+            "lang",
+            "language",
+            "version",
+            "docusaurus_tag"
+        ],
+        "attributesToRetrieve": [
+            "hierarchy",
+            "content",
+            "anchor",
+            "url",
+            "url_without_anchor",
+            "type",
+            "lang"
+        ],
+        "attributesToHighlight": [
+            "hierarchy",
+            "content"
+        ],
+        "attributesToSnippet": [
+            "content:10"
+        ],
+        "camelCaseAttributes": [
+            "hierarchy",
+            "content"
+        ],
+        "searchableAttributes": [
+            "unordered(hierarchy.lvl0)",
+            "unordered(hierarchy.lvl1)",
+            "unordered(hierarchy.lvl2)",
+            "unordered(hierarchy.lvl3)",
+            "unordered(hierarchy.lvl4)",
+            "unordered(hierarchy.lvl5)",
+            "unordered(hierarchy.lvl6)",
+            "content"
+        ],
+        "distinct": true,
+        "attributeForDistinct": "url",
+        "customRanking": [
+            "desc(weight.pageRank)",
+            "desc(weight.level)",
+            "asc(weight.position)"
+        ],
+        "ranking": [
+            "words",
+            "filters",
+            "typo",
+            "attribute",
+            "proximity",
+            "exact",
+            "custom"
+        ],
+        "highlightPreTag": "<span class='algolia-docsearch-suggestion--highlight'>",
+        "highlightPostTag": "</span>",
+        "minWordSizefor1Typo": 3,
+        "minWordSizefor2Typos": 7,
+        "allowTyposOnNumericTokens": false,
+        "minProximity": 1,
+        "ignorePlurals": true,
+        "advancedSyntax": true,
+        "attributeCriteriaComputedByMinProximity": true,
+        "removeWordsIfNoResults": "allOptional",
+        "separatorsToIndex": "_",
+        "language ": {
+            "defaultValue": [
+                "zh-CN"
+            ]
+        },
+        "synonyms": [
+            [
+                "js",
+                "javascript"
+            ],
+            [
+                "ts",
+                "typescript"
+            ]
+        ]
+    }
 }
