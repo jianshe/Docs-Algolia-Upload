@@ -6,6 +6,22 @@
     "stop_urls": [
         "/search"
     ],
+    recordProps: {
+      lvl0: {
+        selectors: "header h1",
+      },
+      lvl1: "div h2",
+      lvl2: "div h3",
+      lvl3: "div h4",
+      lvl4: "div h5",
+      lvl5: "div h6",
+      content: "div p, div li",
+      foo: ".bar",
+      language: {
+        selectors: ".does-not-exists",
+        defaultValue: ["zh-CN", "en-US"],
+      }
+    },
     "selectors": {
         "lvl0": {
             "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
